@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyIp"
 include(":app")
+include(":data")
+include(":domain")
