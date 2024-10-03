@@ -51,6 +51,12 @@ android {
 
 dependencies {
 
+    // View Model
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    // coroutines
+    implementation(libs.kotlinx.coroutines.android)
+
     // modules
     implementation(project(":data"))
     implementation(project(":domain"))
@@ -63,6 +69,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
