@@ -12,11 +12,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.example.myip.ui.viewModels.MainViewModel
+import org.koin.androidx.compose.koinViewModel
 
 
 @Composable
 fun MainScreen(
-    myViewModel: MainViewModel
+    myViewModel: MainViewModel = koinViewModel()
 ) {
 
     val id = myViewModel.getIpAddress().observeAsState("")

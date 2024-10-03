@@ -51,7 +51,11 @@ android {
 
 dependencies {
 
-    // View Model
+    // koin
+    implementation(libs.koin.core)
+    implementation(libs.koin.androidx.compose)
+
+    // view Model
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     // coroutines
